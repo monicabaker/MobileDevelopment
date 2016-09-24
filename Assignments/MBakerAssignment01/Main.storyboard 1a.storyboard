@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWz-BO-oy0">
@@ -70,11 +70,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tqN-OM-2kg">
-                                <frame key="frameInset" minX="20" minY="20" width="353" height="251"/>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tqN-OM-2kg">
+                                <frame key="frameInset" minX="10" minY="20" width="349" height="251"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Generation" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zMZ-O6-bTh">
                                         <frame key="frameInset" minX="42" minY="152" width="121" height="30"/>
@@ -109,7 +109,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rux-yi-t1h">
-                                <frame key="frameInset" minX="20" minY="279" width="353" height="382"/>
+                                <frame key="frameInset" minX="10" minY="298.5" width="349" height="284.5"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -131,7 +131,7 @@
                             <constraint firstItem="tqN-OM-2kg" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="gKQ-2h-O4I"/>
                             <constraint firstItem="rux-yi-t1h" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="10" id="jnf-85-d9s"/>
                             <constraint firstItem="rux-yi-t1h" firstAttribute="top" secondItem="tqN-OM-2kg" secondAttribute="top" id="kQe-jd-RO9"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="rux-yi-t1h" secondAttribute="bottom" constant="20" id="pOP-eS-TR2"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="rux-yi-t1h" secondAttribute="bottom" constant="-20" id="pOP-eS-TR2"/>
                             <constraint firstItem="rux-yi-t1h" firstAttribute="leading" secondItem="tqN-OM-2kg" secondAttribute="trailing" id="uWR-ro-UWJ"/>
                         </constraints>
                         <variation key="default">
@@ -165,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.92753623188412" y="352.17391304347831"/>
+            <point key="canvasLocation" x="744.79999999999995" y="352.17391304347831"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

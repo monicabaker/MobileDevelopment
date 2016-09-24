@@ -15,6 +15,7 @@
 		53230BBB1D8F2CE100879D52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53230BB91D8F2CE100879D52 /* LaunchScreen.storyboard */; };
 		53230BC31D8F371800879D52 /* Tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53230BC21D8F371800879D52 /* Tree.jpg */; };
 		53618BF41D9092FA0073D28E /* Main.storyboard 1a.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53618BF31D9092FA0073D28E /* Main.storyboard 1a.storyboard */; };
+		5379E0451D937A6000501A15 /* Main.storyboard 1b.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5379E0441D937A6000501A15 /* Main.storyboard 1b.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		53230BBC1D8F2CE100879D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53230BC21D8F371800879D52 /* Tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Tree.jpg; path = ../../../../../Tree.jpg; sourceTree = "<group>"; };
 		53618BF31D9092FA0073D28E /* Main.storyboard 1a.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Main.storyboard 1a.storyboard"; path = "../Main.storyboard 1a.storyboard"; sourceTree = "<group>"; };
+		5379E0441D937A6000501A15 /* Main.storyboard 1b.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main.storyboard 1b.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				53230BB01D8F2CE100879D52 /* FirstViewController.swift */,
 				53230BB21D8F2CE100879D52 /* SecondViewController.swift */,
 				53230BB41D8F2CE100879D52 /* Main.storyboard */,
+				5379E0441D937A6000501A15 /* Main.storyboard 1b.storyboard */,
 				53618BF31D9092FA0073D28E /* Main.storyboard 1a.storyboard */,
 				53230BC21D8F371800879D52 /* Tree.jpg */,
 				53230BB71D8F2CE100879D52 /* Assets.xcassets */,
@@ -136,6 +139,7 @@
 				53230BBB1D8F2CE100879D52 /* LaunchScreen.storyboard in Resources */,
 				53230BB81D8F2CE100879D52 /* Assets.xcassets in Resources */,
 				53230BB61D8F2CE100879D52 /* Main.storyboard in Resources */,
+				5379E0451D937A6000501A15 /* Main.storyboard 1b.storyboard in Resources */,
 				53230BC31D8F371800879D52 /* Tree.jpg in Resources */,
 				53618BF41D9092FA0073D28E /* Main.storyboard 1a.storyboard in Resources */,
 			);
