@@ -12,7 +12,7 @@
         <!--Simulation-->
         <scene sceneID="CCz-nO-y3K">
             <objects>
-                <viewController id="weo-oc-mJi" customClass="FirstViewController" customModule="MBakerAssignment01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="weo-oc-mJi" customClass="FirstViewController" customModule="MBakerAssignment1Final" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bqh-ZE-PK6"/>
                         <viewControllerLayoutGuide type="bottom" id="FYf-Ma-pZD"/>
@@ -83,7 +83,7 @@
         <!--Instrumentation-->
         <scene sceneID="09L-Uw-b3n">
             <objects>
-                <viewController id="sZT-UJ-MUH" customClass="SecondViewController" customModule="MBakerAssignment01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sZT-UJ-MUH" customClass="SecondViewController" customModule="MBakerAssignment1Final" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tu8-Fg-IGG"/>
                         <viewControllerLayoutGuide type="bottom" id="eFd-Jl-BbM"/>
@@ -93,24 +93,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93L-3H-S10">
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dY9-kH-YY8">
+                                <frame key="frameInset" minX="20" minY="28" width="240" height="221"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Generation" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VaJ-pm-N6V">
-                                        <frame key="frameInset" minX="42" minY="152" width="121" height="30"/>
+                                        <frame key="frameInset" minX="30" minY="129" width="121" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LFd-sZ-ElU" userLabel="Grid size">
-                                        <frame key="frameInset" minX="43" minY="42" width="118" height="31"/>
+                                        <frame key="frameInset" minX="31" minY="19" width="118" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZfO-X8-rOC" userLabel="Frames/second">
-                                        <frame key="frameInset" minX="43" minY="96" width="118" height="31"/>
+                                        <frame key="frameInset" minX="31" minY="73" width="118" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDm-Pi-awj">
-                                        <frame key="frameInset" minX="57" minY="206" width="90" height="30"/>
+                                        <frame key="frameInset" minX="45" minY="183" width="90" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -120,76 +129,78 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="VaJ-pm-N6V"/>
+                                        <exclude reference="LFd-sZ-ElU"/>
+                                        <exclude reference="ZfO-X8-rOC"/>
+                                        <exclude reference="KDm-Pi-awj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="VaJ-pm-N6V"/>
+                                        <include reference="LFd-sZ-ElU"/>
+                                        <include reference="ZfO-X8-rOC"/>
+                                        <include reference="KDm-Pi-awj"/>
+                                    </mask>
+                                </variation>
                             </view>
-                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4YZ-Ez-04W">
-                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iP6-bL-5Ec">
+                                <frame key="frameInset" minX="293" minY="28" width="255" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="4YZ-Ez-04W" firstAttribute="leading" secondItem="93L-3H-S10" secondAttribute="trailing" id="165-O5-ixD"/>
-                            <constraint firstItem="4YZ-Ez-04W" firstAttribute="top" secondItem="93L-3H-S10" secondAttribute="top" id="1JD-bx-QQb"/>
                             <constraint firstItem="93L-3H-S10" firstAttribute="top" secondItem="Tu8-Fg-IGG" secondAttribute="bottom" id="2ed-ZD-3fr"/>
                             <constraint firstItem="eFd-Jl-BbM" firstAttribute="top" secondItem="93L-3H-S10" secondAttribute="bottom" constant="8" id="C9U-d3-Zgr"/>
                             <constraint firstItem="93L-3H-S10" firstAttribute="height" secondItem="j2Q-65-liN" secondAttribute="height" multiplier="0.5" id="ICx-jz-tyc"/>
-                            <constraint firstItem="eFd-Jl-BbM" firstAttribute="top" secondItem="4YZ-Ez-04W" secondAttribute="bottom" constant="8" id="RQl-Ha-Yct"/>
-                            <constraint firstItem="4YZ-Ez-04W" firstAttribute="top" secondItem="93L-3H-S10" secondAttribute="top" id="RYi-6h-SNx"/>
-                            <constraint firstItem="eFd-Jl-BbM" firstAttribute="top" secondItem="4YZ-Ez-04W" secondAttribute="bottom" constant="-20" id="Tz4-Bv-CBk"/>
+                            <constraint firstItem="dY9-kH-YY8" firstAttribute="top" secondItem="Tu8-Fg-IGG" secondAttribute="bottom" constant="8" id="O3t-62-9HG"/>
+                            <constraint firstItem="dY9-kH-YY8" firstAttribute="width" secondItem="j2Q-65-liN" secondAttribute="width" id="SYn-xE-sRx"/>
+                            <constraint firstItem="eFd-Jl-BbM" firstAttribute="top" secondItem="dY9-kH-YY8" secondAttribute="bottom" constant="22" id="TXc-kQ-JPJ"/>
+                            <constraint firstItem="dY9-kH-YY8" firstAttribute="leading" secondItem="j2Q-65-liN" secondAttribute="leadingMargin" id="WFW-fs-bTv"/>
                             <constraint firstItem="93L-3H-S10" firstAttribute="trailing" secondItem="j2Q-65-liN" secondAttribute="trailingMargin" id="Z7S-AC-yZc"/>
-                            <constraint firstItem="4YZ-Ez-04W" firstAttribute="leading" secondItem="j2Q-65-liN" secondAttribute="leading" constant="10" id="ZC7-n8-v9b"/>
-                            <constraint firstItem="4YZ-Ez-04W" firstAttribute="trailing" secondItem="j2Q-65-liN" secondAttribute="trailingMargin" constant="8" id="ZH9-Oc-BoD"/>
-                            <constraint firstItem="4YZ-Ez-04W" firstAttribute="trailing" secondItem="j2Q-65-liN" secondAttribute="trailingMargin" id="auD-Ag-L1l"/>
                             <constraint firstItem="93L-3H-S10" firstAttribute="centerX" secondItem="j2Q-65-liN" secondAttribute="centerX" id="gV4-be-cvB"/>
                             <constraint firstItem="93L-3H-S10" firstAttribute="width" secondItem="j2Q-65-liN" secondAttribute="width" multiplier="0.5" id="t68-5T-Rma"/>
-                            <constraint firstItem="4YZ-Ez-04W" firstAttribute="top" secondItem="93L-3H-S10" secondAttribute="bottom" id="wBo-xO-xfY"/>
                             <constraint firstItem="93L-3H-S10" firstAttribute="leading" secondItem="j2Q-65-liN" secondAttribute="leadingMargin" id="y4u-tK-bsA"/>
-                            <constraint firstItem="4YZ-Ez-04W" firstAttribute="leading" secondItem="93L-3H-S10" secondAttribute="trailing" constant="8" id="yg0-SY-1as"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dY9-kH-YY8"/>
+                                <exclude reference="iP6-bL-5Ec"/>
+                            </mask>
                             <mask key="constraints">
+                                <exclude reference="ICx-jz-tyc"/>
                                 <exclude reference="gV4-be-cvB"/>
                                 <exclude reference="t68-5T-Rma"/>
-                                <exclude reference="ICx-jz-tyc"/>
-                                <exclude reference="RQl-Ha-Yct"/>
+                                <exclude reference="O3t-62-9HG"/>
+                                <exclude reference="SYn-xE-sRx"/>
+                                <exclude reference="WFW-fs-bTv"/>
                                 <exclude reference="C9U-d3-Zgr"/>
-                                <exclude reference="RYi-6h-SNx"/>
-                                <exclude reference="ZH9-Oc-BoD"/>
-                                <exclude reference="1JD-bx-QQb"/>
-                                <exclude reference="yg0-SY-1as"/>
-                                <exclude reference="165-O5-ixD"/>
+                                <exclude reference="TXc-kQ-JPJ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="constraints">
-                                <include reference="gV4-be-cvB"/>
                                 <include reference="ICx-jz-tyc"/>
+                                <include reference="gV4-be-cvB"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="4YZ-Ez-04W"/>
+                                <exclude reference="93L-3H-S10"/>
+                                <include reference="dY9-kH-YY8"/>
+                                <include reference="iP6-bL-5Ec"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="t68-5T-Rma"/>
-                                <include reference="RQl-Ha-Yct"/>
+                                <include reference="O3t-62-9HG"/>
+                                <include reference="SYn-xE-sRx"/>
+                                <include reference="WFW-fs-bTv"/>
                                 <include reference="C9U-d3-Zgr"/>
-                                <exclude reference="wBo-xO-xfY"/>
-                                <include reference="RYi-6h-SNx"/>
-                                <include reference="ZH9-Oc-BoD"/>
-                                <exclude reference="ZC7-n8-v9b"/>
-                                <include reference="1JD-bx-QQb"/>
-                                <include reference="yg0-SY-1as"/>
-                                <include reference="165-O5-ixD"/>
+                                <include reference="TXc-kQ-JPJ"/>
                             </mask>
                         </variation>
                     </view>
@@ -197,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rec-ZV-yqj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.375" y="349.64788732394368"/>
+            <point key="canvasLocation" x="743.66197183098598" y="348.75"/>
         </scene>
     </scenes>
     <resources>
