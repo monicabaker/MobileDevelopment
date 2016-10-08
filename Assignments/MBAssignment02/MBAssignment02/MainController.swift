@@ -1,14 +1,14 @@
 //
-//  SecondViewController.swift
-//  MBakerAssignment1Final
+//  MainController.swift
+//  MBAssignment02
 //
-//  Created by Monica Baker on 9/25/16.
+//  Created by Monica Baker on 10/8/16.
 //  Copyright © 2016 Monica Baker. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class MainController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

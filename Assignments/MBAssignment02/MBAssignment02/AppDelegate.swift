@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MBakerAssignment1Final
+//  MBAssignment02
 //
-//  Created by Monica Baker on 9/25/16.
+//  Created by Monica Baker on 10/8/16.
 //  Copyright © 2016 Monica Baker. All rights reserved.
 //
 

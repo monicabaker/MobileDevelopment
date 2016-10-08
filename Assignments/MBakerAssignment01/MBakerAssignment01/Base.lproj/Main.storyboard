@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWz-BO-oy0">
@@ -70,7 +70,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tqN-OM-2kg" userLabel="Blue">
@@ -147,6 +147,12 @@
                                         <exclude reference="Mle-dZ-evG"/>
                                         <exclude reference="bDN-Tn-4jl"/>
                                         <exclude reference="gpd-tE-5nc"/>
+                                        <exclude reference="Anf-LY-Vqy"/>
+                                        <exclude reference="AqH-jd-lkh"/>
+                                        <exclude reference="PS7-1R-sAO"/>
+                                        <exclude reference="cma-c4-G8o"/>
+                                        <exclude reference="wUa-xc-lIU"/>
+                                        <exclude reference="zso-Ls-fj8"/>
                                         <exclude reference="Afr-z6-SEJ"/>
                                         <exclude reference="WZn-fg-e3y"/>
                                         <exclude reference="XcX-0u-i7H"/>
@@ -161,12 +167,6 @@
                                         <exclude reference="dcA-QC-SFM"/>
                                         <exclude reference="gX7-dO-l1R"/>
                                         <exclude reference="noM-yO-vy9"/>
-                                        <exclude reference="Anf-LY-Vqy"/>
-                                        <exclude reference="AqH-jd-lkh"/>
-                                        <exclude reference="PS7-1R-sAO"/>
-                                        <exclude reference="cma-c4-G8o"/>
-                                        <exclude reference="wUa-xc-lIU"/>
-                                        <exclude reference="zso-Ls-fj8"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
@@ -174,15 +174,15 @@
                                         <include reference="DtM-7m-go1"/>
                                         <include reference="MWM-ep-Qfj"/>
                                         <include reference="gpd-tE-5nc"/>
+                                        <include reference="Anf-LY-Vqy"/>
+                                        <include reference="PS7-1R-sAO"/>
+                                        <include reference="cma-c4-G8o"/>
                                         <include reference="WZn-fg-e3y"/>
                                         <include reference="lIe-YK-Oia"/>
                                         <include reference="pMI-6f-lEs"/>
                                         <include reference="Xxo-E5-EWk"/>
                                         <include reference="ZT0-Zf-Hyq"/>
                                         <include reference="dcA-QC-SFM"/>
-                                        <include reference="Anf-LY-Vqy"/>
-                                        <include reference="PS7-1R-sAO"/>
-                                        <include reference="cma-c4-G8o"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact">
@@ -190,6 +190,9 @@
                                         <include reference="HYd-qd-B3k"/>
                                         <include reference="Mle-dZ-evG"/>
                                         <include reference="bDN-Tn-4jl"/>
+                                        <include reference="AqH-jd-lkh"/>
+                                        <include reference="wUa-xc-lIU"/>
+                                        <include reference="zso-Ls-fj8"/>
                                         <include reference="Afr-z6-SEJ"/>
                                         <include reference="XcX-0u-i7H"/>
                                         <include reference="mBS-jX-BSu"/>
@@ -198,9 +201,6 @@
                                         <include reference="Iep-XJ-UZa"/>
                                         <include reference="gX7-dO-l1R"/>
                                         <include reference="noM-yO-vy9"/>
-                                        <include reference="AqH-jd-lkh"/>
-                                        <include reference="wUa-xc-lIU"/>
-                                        <include reference="zso-Ls-fj8"/>
                                     </mask>
                                 </variation>
                             </view>
