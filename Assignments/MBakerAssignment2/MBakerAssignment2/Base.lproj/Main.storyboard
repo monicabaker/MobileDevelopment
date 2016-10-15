@@ -84,7 +84,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s38-1Y-TME">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
                                         <state key="normal" title="RunProb2!">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -135,8 +134,14 @@
                         <subviews>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5L-HN-Tr5">
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IkL-og-SQb">
-                                        <frame key="frameInset" minX="8" minY="352" width="361" height="35"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfT-Jp-Nif">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="RunProb3!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IkL-og-SQb">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="HVo-Dj-niO"/>
@@ -144,14 +149,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfT-Jp-Nif">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
-                                        <state key="normal" title="RunProb3!">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.97132972409999996" blue="0.15263894750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -159,9 +156,6 @@
                                     <constraint firstAttribute="trailing" secondItem="IkL-og-SQb" secondAttribute="trailing" constant="8" id="Kfs-AD-CPH"/>
                                     <constraint firstItem="GfT-Jp-Nif" firstAttribute="centerY" secondItem="R5L-HN-Tr5" secondAttribute="centerY" id="N09-xQ-XLF"/>
                                     <constraint firstItem="GfT-Jp-Nif" firstAttribute="centerX" secondItem="R5L-HN-Tr5" secondAttribute="centerX" id="bTU-TI-PIs"/>
-                                    <constraint firstAttribute="trailing" secondItem="IkL-og-SQb" secondAttribute="trailing" constant="8" id="bod-gJ-eR9"/>
-                                    <constraint firstItem="GfT-Jp-Nif" firstAttribute="centerY" secondItem="R5L-HN-Tr5" secondAttribute="centerY" id="ee1-e7-e6X"/>
-                                    <constraint firstItem="GfT-Jp-Nif" firstAttribute="centerX" secondItem="R5L-HN-Tr5" secondAttribute="centerX" id="ioM-vi-gci"/>
                                     <constraint firstItem="IkL-og-SQb" firstAttribute="top" secondItem="GfT-Jp-Nif" secondAttribute="bottom" constant="10" id="zA8-zJ-ciA"/>
                                 </constraints>
                             </view>
@@ -194,6 +188,14 @@
                         <subviews>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-0o-vmu">
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AT-w3-Jiq">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="RunProb4!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rIO-KN-zL6">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -202,23 +204,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AT-w3-Jiq">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
-                                        <state key="normal" title="RunProb4!">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.052996977071034235" green="0.27317101294451207" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="5AT-w3-Jiq" firstAttribute="centerX" secondItem="J0T-0o-vmu" secondAttribute="centerX" id="6WB-9f-DV8"/>
+                                    <constraint firstItem="rIO-KN-zL6" firstAttribute="top" secondItem="5AT-w3-Jiq" secondAttribute="bottom" constant="10" id="EFj-Wh-BLo"/>
                                     <constraint firstItem="rIO-KN-zL6" firstAttribute="leading" secondItem="J0T-0o-vmu" secondAttribute="leading" constant="8" id="RLb-N4-wHv"/>
                                     <constraint firstAttribute="trailing" secondItem="rIO-KN-zL6" secondAttribute="trailing" constant="8" id="bu8-BZ-jfU"/>
-                                    <constraint firstItem="5AT-w3-Jiq" firstAttribute="centerY" secondItem="J0T-0o-vmu" secondAttribute="centerY" id="lr6-OL-lg5"/>
-                                    <constraint firstItem="rIO-KN-zL6" firstAttribute="top" secondItem="5AT-w3-Jiq" secondAttribute="bottom" constant="10" id="yj7-We-43H"/>
+                                    <constraint firstItem="5AT-w3-Jiq" firstAttribute="centerX" secondItem="J0T-0o-vmu" secondAttribute="centerX" id="cgi-De-OkH"/>
+                                    <constraint firstItem="5AT-w3-Jiq" firstAttribute="centerY" secondItem="J0T-0o-vmu" secondAttribute="centerY" id="dy2-oN-w13"/>
                                 </constraints>
                             </view>
                         </subviews>
