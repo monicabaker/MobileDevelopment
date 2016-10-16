@@ -15,28 +15,22 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAo-CF-ZwW" userLabel="Problem 2">
-                                <frame key="frameInset" minX="140" minY="205" width="94" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAo-CF-ZwW" userLabel="Problem 2">
                                 <state key="normal" title="Problem 2"/>
                                 <connections>
                                     <segue destination="flG-tb-wxE" kind="show" id="wA4-BN-fOd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHB-p3-zGd" userLabel="Problem 3">
-                                <frame key="frameInset" minX="140" minY="346" width="94" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHB-p3-zGd" userLabel="Problem 3">
                                 <state key="normal" title="Problem 3"/>
                                 <connections>
                                     <segue destination="wPx-7v-tUk" kind="show" id="Kpb-xC-mns"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUo-Vu-LNJ" userLabel="Problem 4">
-                                <frame key="frameInset" minX="140" minY="508" width="94" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUo-Vu-LNJ" userLabel="Problem 4">
                                 <state key="normal" title="Problem 4"/>
                                 <connections>
                                     <segue destination="cA4-mL-v0O" kind="show" id="Wbd-hb-8ru"/>
@@ -44,6 +38,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kHB-p3-zGd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5g8-eu-tfP"/>
+                            <constraint firstItem="kHB-p3-zGd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I5T-sY-f4u"/>
+                            <constraint firstItem="kHB-p3-zGd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JiP-Eu-Se1"/>
+                            <constraint firstItem="OAo-CF-ZwW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RUi-MY-EQr"/>
+                            <constraint firstItem="eUo-Vu-LNJ" firstAttribute="top" secondItem="kHB-p3-zGd" secondAttribute="bottom" constant="25" id="Spt-4q-qmW"/>
+                            <constraint firstItem="kHB-p3-zGd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UTE-vJ-NDa"/>
+                            <constraint firstItem="kHB-p3-zGd" firstAttribute="top" secondItem="OAo-CF-ZwW" secondAttribute="bottom" constant="25" id="iHv-ga-PAW"/>
+                            <constraint firstItem="eUo-Vu-LNJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vIF-fO-k72"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xSv-t6-Lj2"/>
                 </viewController>
@@ -76,7 +80,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bkw-oz-QAH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R5F-vu-X8C">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHU-VW-p3E">
@@ -132,7 +136,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8RG-vS-vYy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="j4F-n0-Xr5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5L-HN-Tr5">
@@ -191,7 +195,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5FE-gE-gGc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pgH-jY-Oap">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-0o-vmu">

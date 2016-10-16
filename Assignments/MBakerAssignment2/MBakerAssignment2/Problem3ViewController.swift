@@ -25,7 +25,7 @@ class Problem3ViewController: UIViewController {
     
     @IBAction func RunProb3(_ sender: UIButton) {
     
-        print("Hey the button got pushed")
+        print("Hey the Run Prob3! button got pushed")
         TextView.text = Date().description
     }
 

@@ -24,7 +24,7 @@ class Problem4ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func RunProb4(_ sender: AnyObject) {
-        print("Hey the button got pushed")
+        print("Hey the Run Prob4! button got pushed")
         textView.text = Date().description
     }
 
