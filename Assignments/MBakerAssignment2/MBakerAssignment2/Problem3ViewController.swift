@@ -10,7 +10,7 @@ import UIKit
 
 class Problem3ViewController: UIViewController {
 
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var TextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +23,10 @@ class Problem3ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func performCalculation(_ sender: AnyObject) {
+    @IBAction func RunProb3(_ sender: UIButton) {
+    
         print("Hey the button got pushed")
-        textField.text = Date().description
+        TextView.text = Date().description
     }
 
 
