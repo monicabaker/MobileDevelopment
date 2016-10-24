@@ -14,7 +14,7 @@
 		5389557C1DAAEB410044E5AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5389557A1DAAEB410044E5AB /* LaunchScreen.storyboard */; };
 		538955881DAAF1A60044E5AB /* Problem3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538955871DAAF1A60044E5AB /* Problem3ViewController.swift */; };
 		5389558A1DAAF22B0044E5AB /* Problem4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538955891DAAF22B0044E5AB /* Problem4ViewController.swift */; };
-		539DC1A31DB3CCFB0014ADCD /* Problem2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539DC1A21DB3CCFB0014ADCD /* Problem2ViewController.swift */; };
+		538B3DDD1DBD53440058BD1E /* Problem2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B3DDC1DBD53440058BD1E /* Problem2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		5389557D1DAAEB410044E5AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		538955871DAAF1A60044E5AB /* Problem3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem3ViewController.swift; sourceTree = "<group>"; };
 		538955891DAAF22B0044E5AB /* Problem4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem4ViewController.swift; sourceTree = "<group>"; };
-		539DC1A21DB3CCFB0014ADCD /* Problem2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Problem2ViewController.swift; path = ../Problem2ViewController.swift; sourceTree = "<group>"; };
+		538B3DDC1DBD53440058BD1E /* Problem2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				538955711DAAEB410044E5AB /* AppDelegate.swift */,
-				539DC1A21DB3CCFB0014ADCD /* Problem2ViewController.swift */,
+				538B3DDC1DBD53440058BD1E /* Problem2ViewController.swift */,
 				538955871DAAF1A60044E5AB /* Problem3ViewController.swift */,
 				538955891DAAF22B0044E5AB /* Problem4ViewController.swift */,
 				538955731DAAEB410044E5AB /* MainController.swift */,
@@ -146,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				539DC1A31DB3CCFB0014ADCD /* Problem2ViewController.swift in Sources */,
+				538B3DDD1DBD53440058BD1E /* Problem2ViewController.swift in Sources */,
 				538955741DAAEB410044E5AB /* MainController.swift in Sources */,
 				5389558A1DAAF22B0044E5AB /* Problem4ViewController.swift in Sources */,
 				538955881DAAF1A60044E5AB /* Problem3ViewController.swift in Sources */,

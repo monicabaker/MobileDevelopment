@@ -1,13 +1,12 @@
 //
-//  Problem2ViewController.swift
-//  MBakerAssignment2
+//  Grid.swift
+//  MBAssignment3
 //
 //  Created by Monica Baker on 10/23/16.
 //  Copyright © 2016 Monica Baker. All rights reserved.
 //
 
 import Foundation
-import UIKit
 
 class Grid {
     var cells: [GridCell] = [GridCell]()
@@ -19,7 +18,7 @@ class Grid {
         self.cols = cols
         for i in 0 ..< cols {
             for j in 0 ..< rows {
-                let randomState = GridCellState.Empty
+                let randomState = CellState.Empty
                 let cell = GridCell(grid: self,
                                     pos: (i, j),
                                     state: randomState)

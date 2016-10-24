@@ -10,7 +10,7 @@ import UIKit
 
 class Problem3ViewController: UIViewController {
 
-    @IBOutlet weak var TextView: UITextView!
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class Problem3ViewController: UIViewController {
     @IBAction func RunProb3(_ sender: UIButton) {
     
         print("Hey the Run Prob3! button got pushed")
-        TextView.text = Date().description
+        textView.text = Date().description
     }
 
 

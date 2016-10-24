@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAo-CF-ZwW" userLabel="Problem 2">
@@ -80,16 +80,16 @@
                         <viewControllerLayoutGuide type="bottom" id="bkw-oz-QAH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R5F-vu-X8C">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHU-VW-p3E">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMG-Nx-TPk">
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="RunProb2!"/>
+                                        <state key="normal" title="Step"/>
                                         <connections>
-                                            <action selector="RunProb2:" destination="flG-tb-wxE" eventType="touchUpInside" id="ioJ-Xe-kX1"/>
+                                            <action selector="Step:" destination="flG-tb-wxE" eventType="touchUpInside" id="Pxm-lU-t9e"/>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VyA-Ug-C0y">
@@ -120,6 +120,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="TextView" destination="VyA-Ug-C0y" id="a5p-pq-POg"/>
                         <outlet property="textView" destination="VyA-Ug-C0y" id="Wl6-92-DnQ"/>
                     </connections>
                 </viewController>
@@ -136,7 +137,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8RG-vS-vYy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="j4F-n0-Xr5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5L-HN-Tr5">
@@ -195,7 +196,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5FE-gE-gGc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pgH-jY-Oap">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0T-0o-vmu">
