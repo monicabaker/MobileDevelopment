@@ -89,7 +89,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Step"/>
                                         <connections>
-                                            <action selector="Step:" destination="flG-tb-wxE" eventType="touchUpInside" id="Pxm-lU-t9e"/>
+                                            <action selector="Step:" destination="flG-tb-wxE" eventType="touchUpInside" id="SFZ-dd-OhN"/>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VyA-Ug-C0y">
@@ -120,8 +120,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="TextView" destination="VyA-Ug-C0y" id="a5p-pq-POg"/>
-                        <outlet property="textView" destination="VyA-Ug-C0y" id="Wl6-92-DnQ"/>
+                        <outlet property="TextView" destination="VyA-Ug-C0y" id="Wr0-qH-gNt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2h-NJ-olE" userLabel="First Responder" sceneMemberID="firstResponder"/>
