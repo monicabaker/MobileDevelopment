@@ -12,8 +12,10 @@ import UIKit
 class Problem2ViewController: UIViewController {
     
     
-    @IBOutlet weak var TextView: UITextView!
     
+  
+    @IBOutlet weak var TextView2: UITextView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Problem 2"
@@ -28,7 +30,6 @@ class Problem2ViewController: UIViewController {
     
     @IBAction func Step(_ sender: AnyObject) {
         
-        TextView.text = ("Hey the button got pushed!")
         
         let colOfArray = [Bool](repeating: false, count: 10)
         var before = [[Bool]](repeating: colOfArray, count: 10)
@@ -43,6 +44,7 @@ class Problem2ViewController: UIViewController {
                 }
             }
         }
+        
         
         let numberOfTrue = (0 ..< before.count).reduce(0) { (accum, row) in
             return accum + before[row].filter { $0 }.count
@@ -86,7 +88,8 @@ class Problem2ViewController: UIViewController {
             }
             
         }
-        TextView.text = ("There are \(numberOfTrue) Living Cells here")
+        
+        TextView2.text = ("After there are \(numberOfTrue) Living Cells here")
         
     }
     
