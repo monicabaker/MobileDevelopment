@@ -14,11 +14,23 @@ class Problem2ViewController: UIViewController {
     
     @IBOutlet weak var TextView: UITextView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Problem 2"
+        // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
     @IBAction func Step(_ sender: AnyObject) {
         
         TextView.text = ("Hey the button got pushed!")
         
-        let arrayElement = [Bool](repeating: false, count: 10)
+        let arrayElement = [Bool](repeating: false, count: 5)
         var before = [[Bool]](repeating: arrayElement, count: 10)
         // i is the columns and j is the rows
         for i in 0 ..< arrayElement.count {
@@ -48,13 +60,13 @@ class Problem2ViewController: UIViewController {
                     (x: -1, y: -1), (x: 0, y: -1), (x: 1, y: -1)
                 ]
                 
-                var neighbors = offsets.map {
+                let neighbors = offsets.map {
                     (x: ((i + $0.x) + arrayElement.count) % arrayElement.count,
                      y: ((j + $0.y) + before.count) % before.count)
                 }
                 print (neighbors)
                 
-                var livingNeighbors = neighbors.reduce(0) {
+                let livingNeighbors = neighbors.reduce(0) {
                     print("Column = \($1.x), Row = \($1.y), alive = \( before[$1.y][$1.x])")
                     return before[$1.y][$1.x] ? $0 + 1 : $0
                 }
@@ -77,15 +89,6 @@ class Problem2ViewController: UIViewController {
         TextView.text = ("There are \(numberOfTrue) Living Cells here")
         
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.title = "Problem 2"
-        // Do any additional setup after loading the view.
-    }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
 
