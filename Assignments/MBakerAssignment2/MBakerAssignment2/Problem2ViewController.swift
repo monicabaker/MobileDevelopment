@@ -15,9 +15,9 @@ class Problem2ViewController: UIViewController {
     @IBOutlet weak var TextView: UITextView!
     
     @IBAction func Step(_ sender: AnyObject) {
-    
+        
         TextView.text = ("Hey the button got pushed!")
-
+        
         let arrayElement = [Bool](repeating: false, count: 10)
         var before = [[Bool]](repeating: arrayElement, count: 10)
         // i is the columns and j is the rows
@@ -36,7 +36,7 @@ class Problem2ViewController: UIViewController {
             return accum + before[row].filter { $0 }.count
         }
         
-
+        
         var after = [[Bool]](repeating: arrayElement, count: 10)
         for i in 0 ..< arrayElement.count {
             for j in 0 ..< before.count {
@@ -56,21 +56,26 @@ class Problem2ViewController: UIViewController {
                 
                 var livingNeighbors = neighbors.reduce(0) {
                     print("Column = \($1.x), Row = \($1.y), alive = \( before[$1.y][$1.x])")
-                    return before[$1.x][$1.y] ? $0 +1: $0
+                    return before[$1.y][$1.x] ? $0 + 1 : $0
                 }
                 print (livingNeighbors)
                 
                 var willLive = false
                 switch livingNeighbors {
-                case 2 where before [j][i]
-                    3:
+                case 2 where before [j][i],
+                     3:
                     willLive = true
                 default:
                     willLive = false
                 }
-                print ("Row = \(j), Column = \(i), livingNeighbors = \(livingNeighbors), current value = \(before[j][i]),(willLive)")
+                print ("Row = \(j), Column = \(i), living Neighbors = \(livingNeighbors), current value = \(before[j][i]),\(willLive)")
+                
+                after[j][i] = willLive
             }
+            
         }
+        TextView.text = ("There are \(numberOfTrue) Living Cells here")
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,10 +86,6 @@ class Problem2ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
 }
-    
-    TextView.text = ("There are \(numberOfTrue) Living Cells here")
 
-
-
-}
