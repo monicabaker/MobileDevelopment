@@ -30,10 +30,10 @@ class Problem2ViewController: UIViewController {
         
         TextView.text = ("Hey the button got pushed!")
         
-        let arrayElement = [Bool](repeating: false, count: 5)
-        var before = [[Bool]](repeating: arrayElement, count: 10)
+        let colOfArray = [Bool](repeating: false, count: 10)
+        var before = [[Bool]](repeating: colOfArray, count: 10)
         // i is the columns and j is the rows
-        for i in 0 ..< arrayElement.count {
+        for i in 0 ..< colOfArray.count {
             for j in 0 ..< before.count {
                 if arc4random_uniform(3) == 1 {
                     var row = before[j]
@@ -49,8 +49,8 @@ class Problem2ViewController: UIViewController {
         }
         
         
-        var after = [[Bool]](repeating: arrayElement, count: 10)
-        for i in 0 ..< arrayElement.count {
+        var after = [[Bool]](repeating: colOfArray, count: 10)
+        for i in 0 ..< colOfArray.count {
             for j in 0 ..< before.count {
                 typealias Position = (x: Int, y: Int)
                 
@@ -61,7 +61,7 @@ class Problem2ViewController: UIViewController {
                 ]
                 
                 let neighbors = offsets.map {
-                    (x: ((i + $0.x) + arrayElement.count) % arrayElement.count,
+                    (x: ((i + $0.x) + colOfArray.count) % colOfArray.count,
                      y: ((j + $0.y) + before.count) % before.count)
                 }
                 print (neighbors)
