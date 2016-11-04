@@ -31,10 +31,10 @@ class Problem2ViewController: UIViewController {
     @IBAction func Step(_ sender: AnyObject) {
         
         
-        let colOfArray = [Bool](repeating: false, count: 10)
-        var before = [[Bool]](repeating: colOfArray, count: 10)
+        let arrayElement = [Bool](repeating: false, count: 2)
+        var before = [[Bool]](repeating: arrayElement, count: 3)
         // i is the columns and j is the rows
-        for i in 0 ..< colOfArray.count {
+        for i in 0 ..< arrayElement.count {
             for j in 0 ..< before.count {
                 if arc4random_uniform(3) == 1 {
                     var row = before[j]
@@ -51,8 +51,8 @@ class Problem2ViewController: UIViewController {
         }
         
         
-        var after = [[Bool]](repeating: colOfArray, count: 10)
-        for i in 0 ..< colOfArray.count {
+        var after = [[Bool]](repeating: arrayElement, count: 10)
+        for i in 0 ..< arrayElement.count {
             for j in 0 ..< before.count {
                 typealias Position = (x: Int, y: Int)
                 
@@ -62,13 +62,13 @@ class Problem2ViewController: UIViewController {
                     (x: -1, y: -1), (x: 0, y: -1), (x: 1, y: -1)
                 ]
                 
-                let neighbors = offsets.map {
-                    (x: ((i + $0.x) + colOfArray.count) % colOfArray.count,
+                var neighbors = offsets.map {
+                    (x: ((i + $0.x) + arrayElement.count) % arrayElement.count,
                      y: ((j + $0.y) + before.count) % before.count)
                 }
                 print (neighbors)
                 
-                let livingNeighbors = neighbors.reduce(0) {
+                var livingNeighbors = neighbors.reduce(0) {
                     print("Column = \($1.x), Row = \($1.y), alive = \( before[$1.y][$1.x])")
                     return before[$1.y][$1.x] ? $0 + 1 : $0
                 }
@@ -89,7 +89,7 @@ class Problem2ViewController: UIViewController {
             
         }
         
-        TextView2.text = ("After there are \(numberOfTrue) Living Cells here")
+        TextView2.text = ("There are \(numberOfTrue) Living Cells here")
         
     }
     
