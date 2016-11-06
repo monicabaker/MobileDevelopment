@@ -15,7 +15,6 @@
 		538955881DAAF1A60044E5AB /* Problem3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538955871DAAF1A60044E5AB /* Problem3ViewController.swift */; };
 		5389558A1DAAF22B0044E5AB /* Problem4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538955891DAAF22B0044E5AB /* Problem4ViewController.swift */; };
 		538B3DDD1DBD53440058BD1E /* Problem2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B3DDC1DBD53440058BD1E /* Problem2ViewController.swift */; };
-		53C45D2D1DCD1B73002DE3CB /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C45D2C1DCD1B73002DE3CB /* Engine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		538955871DAAF1A60044E5AB /* Problem3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem3ViewController.swift; sourceTree = "<group>"; };
 		538955891DAAF22B0044E5AB /* Problem4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem4ViewController.swift; sourceTree = "<group>"; };
 		538B3DDC1DBD53440058BD1E /* Problem2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem2ViewController.swift; sourceTree = "<group>"; };
-		53C45D2C1DCD1B73002DE3CB /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +65,6 @@
 				538955871DAAF1A60044E5AB /* Problem3ViewController.swift */,
 				538955891DAAF22B0044E5AB /* Problem4ViewController.swift */,
 				538955731DAAEB410044E5AB /* MainController.swift */,
-				53C45D2C1DCD1B73002DE3CB /* Engine.swift */,
 				538955751DAAEB410044E5AB /* Main.storyboard */,
 				538955781DAAEB410044E5AB /* Assets.xcassets */,
 				5389557A1DAAEB410044E5AB /* LaunchScreen.storyboard */,
@@ -150,7 +147,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				538B3DDD1DBD53440058BD1E /* Problem2ViewController.swift in Sources */,
-				53C45D2D1DCD1B73002DE3CB /* Engine.swift in Sources */,
 				538955741DAAEB410044E5AB /* MainController.swift in Sources */,
 				5389558A1DAAF22B0044E5AB /* Problem4ViewController.swift in Sources */,
 				538955881DAAF1A60044E5AB /* Problem3ViewController.swift in Sources */,

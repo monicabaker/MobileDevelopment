@@ -31,8 +31,8 @@ class Problem2ViewController: UIViewController {
     @IBAction func Step(_ sender: AnyObject) {
         
         
-        let arrayElement = [Bool](repeating: false, count: 2)
-        var before = [[Bool]](repeating: arrayElement, count: 3)
+        let arrayElement = [Bool](repeating: false, count: 10)
+        var before = [[Bool]](repeating: arrayElement, count: 10)
         // i is the columns and j is the rows
         for i in 0 ..< arrayElement.count {
             for j in 0 ..< before.count {
