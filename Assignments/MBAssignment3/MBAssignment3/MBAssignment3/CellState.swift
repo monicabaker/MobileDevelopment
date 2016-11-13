@@ -11,24 +11,24 @@ import Foundation
 typealias Position = (x: Int, y: Int)
 
 enum CellState {
-    case Alive
+    case Living
     case Empty
     case Born
     case Died
     
     func isAlive() -> Bool {
         switch self {
-        case .Alive, .Born:
+        case .Living, .Born:
             return true
         case .Empty, .Died:
             return false
         }
     }
-    
+    //allValues method?
     func displayValue() -> String {
         switch self {
-        case .Alive:
-            return "Alive"
+        case .Living:
+            return "Living"
         case .Empty:
             return "Empty"
         case .Born:
@@ -65,15 +65,16 @@ struct GridCell {
     
     func numLivingNeighbors () -> Int {
         return neighbors().reduce(0) {
-            grid[$1.x,$1.y]?.state == .Alive ? $0 + 1 : $0
+            grid[$1.x,$1.y]?.state == .Living ? $0 + 1 : $0
         }
     }
     
+    //toggle Method?
     func nextState() -> CellState {
         switch numLivingNeighbors() {
         case 2 where self.state.isAlive(),
              3:
-            return .Alive
+            return .Living
         default:
             return .Empty
         }

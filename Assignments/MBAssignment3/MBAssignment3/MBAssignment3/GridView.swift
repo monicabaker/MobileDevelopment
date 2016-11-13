@@ -19,8 +19,8 @@ class GridView: UIView {
     var lastTouchedPosition: Position?
     var dataSource: GridViewDataSource!
     
-    var rows: Int = 4
-    var cols: Int = 4
+    var rows: Int = 20
+    var cols: Int = 20
     
     var cellColor = UIColor.yellow
     var gridColor = UIColor.cyan
@@ -103,11 +103,11 @@ class GridView: UIView {
         guard grid[position.row, position.col] != nil
             else { return position }
         
-        if (grid[position.row, position.col] == .Alive) {
+        if (grid[position.row, position.col] == .Living) {
             grid[position.row,position.col] = .Empty
         }
         else {
-            grid[position.row, position.col] = .Alive
+            grid[position.row, position.col] = .Living
         }
         setNeedsDisplay()
         return position
