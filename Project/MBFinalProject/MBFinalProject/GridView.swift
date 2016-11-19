@@ -44,8 +44,8 @@ protocol GridViewDataSource {
     var lastTouchedPosition: Position?
     var dataSource: GridViewDataSource!
     
-    @IBInspectable var rows: Int = 4
-    @IBInspectable var cols: Int = 4
+    @IBInspectable var rows: Int = 6
+    @IBInspectable var cols: Int = 6
     
     @IBInspectable var cellColor = UIColor.yellow
     @IBInspectable var gridColor = UIColor.cyan
