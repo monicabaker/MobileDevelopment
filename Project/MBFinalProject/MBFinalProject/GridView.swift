@@ -1,12 +1,5 @@
 //
 //  GridView.swift
-//  MBFinalProject
-//
-//  Created by Monica Baker on 11/13/16.
-//  Copyright © 2016 Monica Baker. All rights reserved.
-//
-//
-//  Copied from GridView.swift
 //  Lecture8
 //
 //  Created by Van Simmons on 10/3/16.
@@ -44,10 +37,10 @@ protocol GridViewDataSource {
     var lastTouchedPosition: Position?
     var dataSource: GridViewDataSource!
     
-    @IBInspectable var rows: Int = 6
-    @IBInspectable var cols: Int = 6
+    @IBInspectable var rows: Int = 4
+    @IBInspectable var cols: Int = 4
     
-    @IBInspectable var cellColor = UIColor.yellow
+    @IBInspectable var cellColor = UIColor.blue
     @IBInspectable var gridColor = UIColor.cyan
     
     // Only override draw() if you perform custom drawing.
