@@ -40,7 +40,7 @@ protocol GridViewDataSource {
     @IBInspectable var rows: Int = 4
     @IBInspectable var cols: Int = 4
     
-    @IBInspectable var cellColor = UIColor.blue
+    @IBInspectable var cellColor = UIColor.yellow
     @IBInspectable var gridColor = UIColor.cyan
     
     // Only override draw() if you perform custom drawing.
@@ -52,7 +52,7 @@ protocol GridViewDataSource {
         //set the path's line width to the height of the stroke
         gridPath.lineWidth = 2.0
         
-        _ = ( 0 ... cols).map {
+        ( 0 ... cols).forEach {
             let fraction = CGFloat($0) / CGFloat(cols)
             gridPath.move(to: CGPoint(
                 x:rect.origin.x + ( fraction * rect.size.width),
@@ -63,7 +63,7 @@ protocol GridViewDataSource {
                 y:rect.origin.y + rect.size.height))
         }
         
-        _ = ( 0 ... rows).map {
+        ( 0 ... rows).forEach {
             let fraction = CGFloat($0) / CGFloat(rows)
             gridPath.move(to: CGPoint(x: rect.origin.x,
                                       y: rect.origin.y + fraction * rect.size.height))
@@ -75,16 +75,26 @@ protocol GridViewDataSource {
                               height: rect.size.height/CGFloat(rows))
         for  i in 0 ..< cols {
             for  j in 0 ..< rows {
-                let colFraction = CGFloat(i)/CGFloat(cols)
-                let rowFraction = CGFloat(j)/CGFloat(rows)
-                let cellOrigin = CGPoint(x:rect.origin.x + (colFraction*rect.size.width),
-                                         y:rect.origin.y + (rowFraction*rect.size.height))
-                let cell = CGRect(origin: cellOrigin, size: cellSize)
-                let path = UIBezierPath(ovalIn: cell)
                 if let state = dataSource?.cellState(x: j, y: i) {
                     var fillColor = UIColor.clear
-                    if state.isAlive() {
+                    let colFraction = CGFloat(i)/CGFloat(cols)
+                    let rowFraction = CGFloat(j)/CGFloat(rows)
+                    let cellOrigin = CGPoint(x:rect.origin.x + (colFraction*rect.size.width),
+                                             y:rect.origin.y + (rowFraction*rect.size.height))
+                    let cell = CGRect(origin: cellOrigin, size: cellSize)
+                    let path = UIBezierPath(ovalIn: cell)
+                    switch state {
+                    case .born:
+                        fillColor = cellColor.withAlphaComponent(0.5)
+                    case .alive:
                         fillColor = cellColor
+                    case .died:
+                        fillColor = UIColor(colorLiteralRed: 0.0,
+                                            green: 0.0,
+                                            blue: 0.0,
+                                            alpha: 0.2)
+                    case .empty:
+                        break
                     }
                     fillColor.setFill()
                     path.fill()
