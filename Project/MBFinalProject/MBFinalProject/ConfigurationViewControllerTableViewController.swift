@@ -13,6 +13,7 @@
 //  Copyright © 2016 ComputeCycles, LLC. All rights reserved.
 //
 
+
 import UIKit
 
 class ConfigurationViewController: UITableViewController {
@@ -34,10 +35,16 @@ class ConfigurationViewController: UITableViewController {
             return
         }
         let fetcher = Fetcher()
-        fetcher.fetchJSON(url: url) { (json: Any?, message: String?) in
-            self.json = json as? [Any] ?? []
-            OperationQueue.main.addOperation {
-                self.tableView.reloadData()
+        fetcher.fetchJSON(url: url) { (_ result: EitherOr) in
+            switch result {
+            case .success(let json):
+                self.json = json as? [Any] ?? []
+                OperationQueue.main.addOperation {
+                    self.tableView.reloadData()
+                }
+                
+            case .failure:
+                break
             }
         }
     }
@@ -103,14 +110,22 @@ class ConfigurationViewController: UITableViewController {
      }
      */
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        guard let destination = segue.destination as? ConfigGridViewController
+            else {
+                return
+        }
+        let row = self.tableView.indexPathForSelectedRow!.row
+        if let config = json[row] as? [String: Any] {
+            destination.config = config
+        }
+    }
+    
     
 }
