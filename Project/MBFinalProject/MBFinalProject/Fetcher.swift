@@ -106,11 +106,4 @@ class Fetcher: NSObject, URLSessionDelegate, URLSessionTaskDelegate {
         task.resume()
     }
     
-    
-    
-    
-    
-    
-    
-    
 }

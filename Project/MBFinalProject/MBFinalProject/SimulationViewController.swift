@@ -2,7 +2,7 @@
 //  SecondViewController.swift
 //  Lecture15
 //
-//  Created by Van Simmons on 11/7/16.
+///  Created by Van Simmons on 11/7/16.
 //  Copyright © 2016 ComputeCycles, LLC. All rights reserved.
 //
 
@@ -12,13 +12,25 @@ class SimulationViewController: UIViewController,
 EngineDelegate, GridViewDataSource {
     
     @IBOutlet weak var gridView: GridView!
-    var engine: Engine = Engine(rows: 10, cols: 10)
+    var engine: Engine = (UIApplication.shared.delegate as! AppDelegate).engine
+    var defaults: UserDefaults = UserDefaults.standard
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         gridView.dataSource = self
         engine.delegate = self
+        self.gridView.rows = Int(defaults.value(forKey: "Rows") as? Float ?? 5.0)
+        self.gridView.cols = Int(defaults.value(forKey: "Columns") as? Float ?? 5.0)
+        let center = NotificationCenter.default
+        center.addObserver(forName: NSNotification.Name(rawValue:ENGINE_UPDATED),
+                           object: nil,
+                           queue: nil) { (n: Notification) -> Void in
+                            self.gridView.rows = self.engine.grid.rows
+                            self.gridView.cols = self.engine.grid.cols
+                            self.gridView.setNeedsDisplay()
+        }
     }
     
     //MARK: EngineDelegateProtocol
@@ -34,15 +46,16 @@ EngineDelegate, GridViewDataSource {
     func setCellState (x: Int, y: Int, state: GridCellState) -> Void {
         engine.grid[x, y]?.state = state
     }
+    
     //MARK: Actions
-    @IBAction func ste(_ sender: Any) {
+    @IBAction func step(_ sender: Any) {
         engine.step()
     }
     
     @IBAction func toggle(_ sender: UISwitch) {
         if sender.isOn {
             self.gridView.isUserInteractionEnabled = false
-            engine.timerInterval = 0.5
+            engine.timerInterval = 0.05
         } else {
             self.gridView.isUserInteractionEnabled = true
             engine.timerInterval = 0.0

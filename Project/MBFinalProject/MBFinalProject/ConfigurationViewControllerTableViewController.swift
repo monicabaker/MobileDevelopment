@@ -13,7 +13,6 @@
 //  Copyright © 2016 ComputeCycles, LLC. All rights reserved.
 //
 
-
 import UIKit
 
 class ConfigurationViewController: UITableViewController {
@@ -126,6 +125,4 @@ class ConfigurationViewController: UITableViewController {
             destination.config = config
         }
     }
-    
-    
 }
